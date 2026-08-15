@@ -1,0 +1,19 @@
+{
+  "name": "rebuild-small-business-site",
+  "version": "1.0.0",
+  "description": "Rebuild and improve a small-business marketing site from a URL. Booking and checkout stay on the system that already takes money.",
+  "author": {
+    "name": "mar3co",
+    "url": "https://github.com/mar3co"
+  },
+  "homepage": "https://github.com/mar3co/rebuild-small-business-site",
+  "license": "MIT",
+  "keywords": [
+    "small-business",
+    "marketing-site",
+    "wordpress",
+    "rebuild",
+    "nextjs",
+    "mindbody"
+  ]
+}

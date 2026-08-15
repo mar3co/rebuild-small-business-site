@@ -1,0 +1,18 @@
+{
+  "name": "rebuild-small-business-site",
+  "description": "Rebuild and improve a small-business marketing site from a URL.",
+  "owner": {
+    "name": "mar3co",
+    "url": "https://github.com/mar3co"
+  },
+  "plugins": [
+    {
+      "name": "rebuild-small-business-site",
+      "source": "./",
+      "description": "Rebuild and improve a small-business marketing site from a URL. Booking and checkout stay on the system that already takes money.",
+      "category": "productivity",
+      "homepage": "https://github.com/mar3co/rebuild-small-business-site",
+      "tags": ["small-business", "wordpress", "nextjs", "marketing"]
+    }
+  ]
+}

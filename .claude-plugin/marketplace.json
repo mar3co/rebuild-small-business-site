@@ -1,0 +1,17 @@
+{
+  "name": "rebuild-small-business-site",
+  "metadata": {
+    "description": "Rebuild and improve a small-business marketing site from a URL. Booking and checkout stay on the system that already takes money."
+  },
+  "owner": {
+    "name": "mar3co",
+    "url": "https://github.com/mar3co"
+  },
+  "plugins": [
+    {
+      "name": "rebuild-small-business-site",
+      "source": "./",
+      "description": "Rebuild and improve a small-business marketing site from a URL. Booking and checkout stay on the system that already takes money."
+    }
+  ]
+}
