@@ -16,7 +16,7 @@ Hours, NAP, and the canonical URL exist only here.
 
 What they sell as **copy plus a real URL**. Intro special, membership, consult, “call to book” — whatever is true. Prices are display only. The money system is the source of truth for what a client can actually buy.
 
-A Book / Shop / Book now control is a real href from `offers` or `booking`, never `#`.
+A Book / Shop / Book now control is a real href from `offers` or `booking`, never `#`. Phone-only: that href is the `tel:` / `sms:` from `site`.
 
 ### `redirects`
 

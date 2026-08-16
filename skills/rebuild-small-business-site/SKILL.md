@@ -13,13 +13,14 @@ Rebuild the **marketing site**. Improve the IA. Keep the system that already tak
 
 This is a rebuild-and-improve skill, not a clone and not an in-place theme refresh. WordPress → a modern stack is the home case.
 
-**REQUIRED SUB-SKILL:** Use frontend-design for visual work. Do not ship a generic “small business” template.
+Design from **their** identity: mark from their logo, their photography, type that matches the room — not a “more feminine / more premium” default and not a generic small-business template. If a `frontend-design` skill is loaded, use it. If it is not, this floor still applies.
 
 ## When not to use
 
 - They want a theme tweak on the current WordPress/Wix/Squarespace site
 - The brief is “build us a custom checkout / calendar / membership app”
-- The live site **is** the store (Shopify, Square Online) and they asked to restyle that store — keep checkout; rebuild only a marketing surface if they asked for that
+
+If the live site **is** the store (Shopify, Square Online), this skill still runs: keep checkout and rebuild only a marketing surface when they asked for that. See `references/keep-the-system.md`.
 
 ## Phases
 
@@ -28,7 +29,7 @@ This is a rebuild-and-improve skill, not a clone and not an in-place theme refre
 3. **State the improved page list** and what stays off-site (booking, cart, login), then build. Do not wait for a second approval unless a client-open fact blocks a page. See `references/improve.md`.
 4. **Recommend** Next.js App Router, Tailwind, Vercel, typed `content/` modules. Use that unless the brief or the money system makes it a bad fit.
 5. **Put facts in `content/`.** Components do not hardcode hours, NAP, or Book hrefs. See `references/content-modules.md`.
-6. **Local rebuild is done** when desktop and mobile click-through works and every Book control is a real URL. Tell them which file to edit for hours and links.
+6. **Local rebuild is done** when Path A below is true. Tell them which file to edit for hours and links.
 7. **Ship only if they ask.** See `references/ship.md`.
 
 ## Hard rules
@@ -49,8 +50,12 @@ This is a rebuild-and-improve skill, not a clone and not an in-place theme refre
 | “Hardcode hours in the footer, config later” | Hours exist only in `content/site`. |
 | “Point OG at the preview host so Slack works” | Tags stay on the real domain. Preview art at `/opengraph-image`. |
 
-**Red flags — stop:** `#` Book buttons · placeholder quotes · hours only in a component · page-for-page WordPress clone · `VERCEL_URL` in `metadataBase` · “we’ll wire booking later”
+**Red flags — stop:** `#` Book buttons · placeholder quotes · hours only in a component · page-for-page WordPress clone · `VERCEL_URL` in `metadataBase` · “we’ll wire booking later” · default stack with no tests on offer URLs / redirects · claiming click-through without a browser or a running dev server
 
 ## Done (path A)
 
-Local site. DRY `content/`. Real booking links. Improved IA. Browser-checked on desktop and mobile. Operator knows which file changes hours and links.
+- Local site. DRY `content/`. Real booking links. Improved IA.
+- On the default stack: tests lock offer URLs and the redirect table. See `references/content-modules.md`.
+- Every old path in `redirects` has a destination that exists. Click one leftover URL on the running site (or `curl` it) and confirm the redirect.
+- Click through desktop and mobile in a browser if tools allow. Otherwise start the dev server and `curl` each primary route plus every Book href. Do not write “browser-checked” unless one of those happened.
+- Operator knows which file changes hours and links.

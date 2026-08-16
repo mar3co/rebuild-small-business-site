@@ -21,7 +21,16 @@ Primary nav is a few jobs (Start / services / pricing / Visit), not every WordPr
 
 ## Design
 
-Use frontend-design. Pull the mark from their logo. Use their photography. Match type to the room, not to a “more feminine / more premium” default. Proof is real ratings, not invented testimonials.
+Pull the mark from their logo. Use their photography. Match type to the room, not to a “more feminine / more premium” default. Proof is real ratings, not invented testimonials. If `frontend-design` is loaded, use it for the visual pass; if it is not, this paragraph is the floor.
+
+## Accessibility
+
+- Real alt text on photos (what is in the frame, not “image”)
+- Text and controls contrast on the actual background
+- Book / phone targets are easy to hit on a phone
+- Nav and Book work with a keyboard
+- If a lead form already existed, every field has a label
+- Do not use color alone for ratings or status
 
 ## Client-open
 

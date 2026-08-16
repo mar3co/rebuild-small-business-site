@@ -28,9 +28,9 @@ claude plugin marketplace add mar3co/rebuild-small-business-site
 claude plugin install rebuild-small-business-site@rebuild-small-business-site
 ```
 
-Or copy `skills/rebuild-small-business-site/` into `~/.grok/skills/` or `.grok/skills/`.
+Or copy `skills/rebuild-small-business-site/` into `~/.grok/skills/`, `.grok/skills/`, `~/.claude/skills/`, or `.claude/skills/`.
 
-Then paste a URL, or run `/rebuild-small-business-site`.
+Then paste a URL, or run `/rebuild-small-business-site`. After a plugin install on Claude, the qualified form `/rebuild-small-business-site:rebuild-small-business-site` also works.
 
 ## Rules the skill enforces
 

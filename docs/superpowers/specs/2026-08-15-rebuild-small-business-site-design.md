@@ -27,6 +27,7 @@ rebuild-small-business-site/
   plugin.json                      # plugin identity at repo root
   LICENSE                          # MIT
   README.md
+  commands/rebuild-small-business-site.md
   skills/rebuild-small-business-site/
     SKILL.md
     references/
@@ -36,7 +37,7 @@ rebuild-small-business-site/
       ship.md
 ```
 
-v1 ships **procedure only**: one skill, four short reference files, dual marketplace manifests so Grok and Claude/Cursor can install it. No hooks, no agents, no MCP, no site template, no Camarillo copy or photos.
+v1 ships **procedure only**: one skill, four short reference files, a `commands/` slash entry, dual marketplace manifests so Grok and Claude/Cursor can install it. No hooks, no agents, no MCP, no site template, no Camarillo copy or photos. Design work uses `frontend-design` when that skill is already loaded; it is not a dependency of this plugin.
 
 Install (after publish):
 
@@ -48,7 +49,7 @@ grok plugin install rebuild-small-business-site --trust
 Claude/Cursor: `claude plugin marketplace add mar3co/rebuild-small-business-site` then install the same plugin name. The skill folder also works if someone copies it into `~/.grok/skills/` or `.grok/skills/`.
 
 **Skill name:** `rebuild-small-business-site`  
-**Slash:** `/rebuild-small-business-site`
+**Slash:** `/rebuild-small-business-site` (plugin `commands/` entry; Claude also accepts `/rebuild-small-business-site:rebuild-small-business-site`)
 
 **Description** (when-to-use only, no workflow summary):
 
