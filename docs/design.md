@@ -27,7 +27,8 @@ rebuild-small-business-site/
   plugin.json                      # plugin identity at repo root
   LICENSE                          # MIT
   README.md
-  commands/rebuild-small-business-site.md
+  CHANGELOG.md
+  commands/rebuild.md                  # Claude: /rebuild-small-business-site:rebuild
   skills/rebuild-small-business-site/
     SKILL.md
     references/
@@ -46,10 +47,12 @@ grok plugin marketplace add mar3co/rebuild-small-business-site
 grok plugin install rebuild-small-business-site --trust
 ```
 
-Claude/Cursor: `claude plugin marketplace add mar3co/rebuild-small-business-site` then install the same plugin name. The skill folder also works if someone copies it into `~/.grok/skills/` or `.grok/skills/`.
+Claude/Cursor: `claude plugin marketplace add mar3co/rebuild-small-business-site` then install the same plugin name. The skill folder also works if someone copies it into `~/.grok/skills/`, `.grok/skills/`, `~/.claude/skills/`, or `.claude/skills/`.
 
 **Skill name:** `rebuild-small-business-site`  
-**Slash:** `/rebuild-small-business-site` (plugin `commands/` entry; Claude also accepts `/rebuild-small-business-site:rebuild-small-business-site`)
+**Slash:**
+- Grok (plugin or copied skill): `/rebuild-small-business-site`
+- Claude plugin install: `/rebuild-small-business-site:rebuild` (command) and `/rebuild-small-business-site:rebuild-small-business-site` (skill). Bare `/rebuild-small-business-site` is not registered after a Claude plugin install.
 
 **Description** (when-to-use only, no workflow summary):
 
